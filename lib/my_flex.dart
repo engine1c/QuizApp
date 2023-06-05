@@ -34,7 +34,7 @@ class MyFlex extends StatelessWidget {
           size: 50,
           color: Colors.black,
         ),
-        Expanded(child: Image.network('http://mir-zdravia.com.ua/wa-data/public/shop/products/05/02/205/images/469/469.970.jpg'))
+        Expanded(child: Image.network('https://ichef.bbci.co.uk/onesport/cps/800/cpsprodpb/FBF2/production/_129989446_djokovic.jpg'))
        ],
 // BiggerColorBox() ,
 // Flexible(fit: FlexFit.loose, flex: 1,

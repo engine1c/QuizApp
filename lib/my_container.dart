@@ -14,7 +14,7 @@ class MyContainer extends StatelessWidget {
         decoration: BoxDecoration(
           image: DecorationImage(
            image: Image.network(
-            'http://mir-zdravia.com.ua/wa-data/public/shop/products/05/02/205/images/469/469.970.jpg'
+            'https://ichef.bbci.co.uk/onesport/cps/800/cpsprodpb/FBF2/production/_129989446_djokovic.jpg'
            ).image ,
            fit: BoxFit.cover,
           ),

@@ -19,7 +19,7 @@ class QuestionData{
       {'answer': 'Мастером...',},
     ]
     ),
-    Question(title: 'Сегодня я...', 
+    Question(title: 'Сегодня я1...', 
     answer: [
       {'answer': 'на подвиг...',},
       {'answer': 'зарялку...',},
@@ -27,6 +27,22 @@ class QuestionData{
       {'answer': 'рюкзак...',},
     ]
     ),
-  ];
+    Question(title: 'Сегодня я2...', 
+    answer: [
+      {'answer': 'на подвиг...',},
+      {'answer': 'зарялку...',},
+      {'answer': 'магазин...','isCorrect':1},
+      {'answer': 'рюкзак...',},
+    ]
+    ),    Question(title: 'Сегодня я3...', 
+    answer: [
+      {'answer': 'на подвиг...',},
+      {'answer': 'зарялку...',},
+      {'answer': 'магазин...','isCorrect':1},
+      {'answer': 'рюкзак...',},
+    ]
+    ),
+    
+      ];
 List<Question> get questions => [..._data];
 }

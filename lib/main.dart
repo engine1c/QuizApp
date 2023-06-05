@@ -16,8 +16,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'QUIZ App',
       theme: ThemeData(
-        primarySwatch: Colors.deepPurple,
+        primarySwatch: Colors.indigo,
+        textTheme: const TextTheme(
+          bodySmall: TextStyle(fontSize: 22, color: Colors.green),
+        ),
+        fontFamily: 'Georgia',
       ),
+
       home: const HomePage(),
     );
   }
