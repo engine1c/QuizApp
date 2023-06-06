@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart' show debugPaintSizeEnabled;
 import 'package:flutter_application_1/pages/home.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   debugPaintSizeEnabled = false;
@@ -17,10 +18,9 @@ class MyApp extends StatelessWidget {
       title: 'QUIZ App',
       theme: ThemeData(
         primarySwatch: Colors.indigo,
-        textTheme: const TextTheme(
-          bodySmall: TextStyle(fontSize: 22, color: Colors.green),
+        textTheme: GoogleFonts.openSansCondensedTextTheme(
+          Theme.of(context).textTheme
         ),
-        fontFamily: 'Georgia',
       ),
 
       home: const HomePage(),

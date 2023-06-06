@@ -34,7 +34,8 @@ class QuestionData{
       {'answer': 'магазин...','isCorrect':1},
       {'answer': 'рюкзак...',},
     ]
-    ),    Question(title: 'Сегодня я3...', 
+    ),
+    Question(title: 'Сегодня я3...', 
     answer: [
       {'answer': 'на подвиг...',},
       {'answer': 'зарялку...',},
@@ -42,7 +43,30 @@ class QuestionData{
       {'answer': 'рюкзак...',},
     ]
     ),
-    
-      ];
+    Question(title: 'Сегодня я4...', 
+    answer: [
+      {'answer': 'на подвиг...',},
+      {'answer': 'зарялку...',},
+      {'answer': 'магазин...','isCorrect':1},
+      {'answer': 'рюкзак...',},
+    ]
+    ),
+    Question(title: 'Сегодня я5...', 
+    answer: [
+      {'answer': 'на подвиг...',},
+      {'answer': 'зарялку...',},
+      {'answer': 'магазин...','isCorrect':1},
+      {'answer': 'рюкзак...',},
+    ]
+    ),
+    Question(title: 'Сегодня я6...', 
+    answer: [
+      {'answer': 'на подвиг...',},
+      {'answer': 'зарялку...',},
+      {'answer': 'магазин...','isCorrect':1},
+      {'answer': 'рюкзак...',},
+    ]
+    ),
+  ];
 List<Question> get questions => [..._data];
 }
