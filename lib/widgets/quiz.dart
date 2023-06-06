@@ -9,6 +9,9 @@ class Quiz extends StatelessWidget {
 
   const Quiz({super.key, this.index, required this.questionData, required this.onChangAnswer});
 
+  final mainTextStyle = const TextStyle(
+      color: Colors.teal, fontSize: 28, fontWeight: FontWeight.w900);
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -17,6 +20,7 @@ class Quiz extends StatelessWidget {
                 padding: const EdgeInsets.all(10),
                 child: Text(
                   questionData.questions[index].title,
+                  style: mainTextStyle,
                 ),
               ),
               ...questionData.questions[index].answer

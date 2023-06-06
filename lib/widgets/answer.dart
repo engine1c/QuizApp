@@ -11,6 +11,9 @@ class Answer extends StatelessWidget {
   required this.onChangeAnswer
   }) : super(key: key);
 
+  final whiteTextStyle = const TextStyle(
+      color: Colors.yellowAccent, fontSize: 24, fontWeight: FontWeight.w900);
+  
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -34,6 +37,7 @@ class Answer extends StatelessWidget {
           ])
         ),
         child: Text(
+          style: whiteTextStyle,
           title,
         textAlign: TextAlign.center,
         ),

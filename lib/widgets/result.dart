@@ -11,6 +11,9 @@ class Result extends StatelessWidget {
       required this.total,
       required Function() this.onClearState});
 
+  final mainTextStyle = const TextStyle(
+      color: Colors.yellowAccent, fontSize: 24, fontWeight: FontWeight.w900);
+
   @override
   Widget build(BuildContext context) {
     String msg = '';
@@ -27,59 +30,64 @@ class Result extends StatelessWidget {
       img = Image.asset('assets/images/good.jpg');
     }
 
-    return Container(
-      padding: const EdgeInsets.all(20),
-      margin: const EdgeInsets.symmetric(horizontal: 30),
-      decoration: BoxDecoration(
-        boxShadow: const [
-          BoxShadow(
-              color: Colors.black,
-              blurRadius: 15,
-              spreadRadius: 0,
-              offset: Offset(2, 5)),
-        ],
-        borderRadius: BorderRadius.circular(30),
-        gradient: const LinearGradient(
-          colors: [
-            Color(0xFF5337ff),
-            Color(0xFF8131ff),
-            Color(0xFFbd27ff),
+    return DefaultTextStyle(
+      style: mainTextStyle,
+      child: Container(
+        padding: const EdgeInsets.all(20),
+        margin: const EdgeInsets.symmetric(horizontal: 30),
+        decoration: BoxDecoration(
+          boxShadow: const [
+            BoxShadow(
+                color: Colors.black,
+                blurRadius: 15,
+                spreadRadius: 0,
+                offset: Offset(2, 5)),
           ],
+          borderRadius: BorderRadius.circular(30),
+          gradient: const LinearGradient(
+            colors: [
+              Color(0xFF5337ff),
+              Color(0xFF8131ff),
+              Color(0xFFbd27ff),
+            ],
+          ),
         ),
-      ),
-      child: Column(
-        children: [
-          SizedBox(
-            width: 120,
-            height: 120,
-            child: FittedBox(
-              fit: BoxFit.contain,
-              child: img,
-            ),
-          ),
-          SizedBox(
-            child: Text(
-              msg,
-              textAlign: TextAlign.center,
-            ),
-          ),
-          const Divider(
-            color: Colors.white,
-          ),
-          Text('OK $count is $total'),
-          const Divider(
-            color: Colors.white,
-          ),
-          ElevatedButton(
-            onPressed: onClearState,
-            style: ButtonStyle(
-              textStyle: MaterialStateProperty.all(
-                const TextStyle(fontSize: 23),
+        child: Column(
+          children: [
+            SizedBox(
+              width: 120,
+              height: 120,
+              child: FittedBox(
+                fit: BoxFit.contain,
+                child: img,
               ),
             ),
-            child: const Text('Пройти еще раз...'),
-          ),
-        ],
+            SizedBox(
+              child: Text(
+                msg,
+                textAlign: TextAlign.center,
+                
+              ),
+            ),
+            const Divider(
+              color: Colors.white,
+            ),
+            Text('OK $count is $total',
+            ),
+            const Divider(
+              color: Colors.white,
+            ),
+            ElevatedButton(
+              onPressed: onClearState,
+              style: ButtonStyle(
+                textStyle: MaterialStateProperty.all(
+                  const TextStyle(fontSize: 23),
+                ),
+              ),
+              child: const Text('Пройти еще раз...'),
+            ),
+          ],
+        ),
       ),
     );
   }
