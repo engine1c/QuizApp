@@ -10,7 +10,10 @@ class Quiz extends StatelessWidget {
   const Quiz({super.key, this.index, required this.questionData, required this.onChangAnswer});
 
   final mainTextStyle = const TextStyle(
-      color: Colors.teal, fontSize: 28, fontWeight: FontWeight.w900);
+      fontFamily: 'ReggaeOne',
+      color: Colors.teal, 
+      fontSize: 28, 
+      fontWeight: FontWeight.w900);
 
   @override
   Widget build(BuildContext context) {

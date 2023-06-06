@@ -11,7 +11,9 @@ class ProgressBar extends StatelessWidget {
   this.total
   }) : super(key: key);
 
-
+  final mainTextStyle = const TextStyle(
+      fontFamily: 'TrainOne',
+      color: Colors.brown, fontSize: 20, fontWeight: FontWeight.bold);
 
   @override
   Widget build(BuildContext context) {
@@ -25,6 +27,7 @@ class ProgressBar extends StatelessWidget {
           fit: BoxFit.contain,
           child: Text(
             '$count - $total',
+            style: mainTextStyle,
           ),
         ),
         const SizedBox(width: 10,),

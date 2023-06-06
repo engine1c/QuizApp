@@ -12,7 +12,8 @@ class Answer extends StatelessWidget {
   }) : super(key: key);
 
   final whiteTextStyle = const TextStyle(
-      color: Colors.yellowAccent, fontSize: 24, fontWeight: FontWeight.w900);
+      fontFamily: 'ShantellSans',
+      color: Colors.yellowAccent, fontSize: 28, fontWeight: FontWeight.normal);
   
   @override
   Widget build(BuildContext context) {

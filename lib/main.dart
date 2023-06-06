@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart' show debugPaintSizeEnabled;
 import 'package:flutter_application_1/pages/home.dart';
-import 'package:google_fonts/google_fonts.dart';
+//import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   debugPaintSizeEnabled = false;
@@ -14,16 +14,17 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       title: 'QUIZ App',
-      theme: ThemeData(
-        primarySwatch: Colors.indigo,
-        textTheme: GoogleFonts.openSansCondensedTextTheme(
-          Theme.of(context).textTheme
-        ),
-      ),
+      // theme: ThemeData(
+      //   primarySwatch: Colors.indigo,
+      //   fontFamily: 'ReggaeOne',
+      //   // textTheme:  GoogleFonts.openSansCondensedTextTheme(
+      //   //   Theme.of(context).textTheme
+      //   //),
+      // ),
 
-      home: const HomePage(),
+      home: HomePage(),
     );
   }
 }

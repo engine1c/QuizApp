@@ -12,7 +12,12 @@ class Result extends StatelessWidget {
       required Function() this.onClearState});
 
   final mainTextStyle = const TextStyle(
-      color: Colors.yellowAccent, fontSize: 24, fontWeight: FontWeight.w900);
+      fontFamily: 'Pacifico',
+      color: Colors.yellowAccent, fontSize: 24, fontWeight: FontWeight.normal);
+
+  final resTextStyle = const TextStyle(
+      fontFamily: 'TrainOne',
+      color: Colors.yellow, fontSize: 20, fontWeight: FontWeight.bold);
 
   @override
   Widget build(BuildContext context) {
@@ -20,13 +25,13 @@ class Result extends StatelessWidget {
     Widget img;
 
     if (0 <= count && count <= 3) {
-      msg = '111';
+      msg = 'Савсем не очень!';
       img = Image.asset('assets/images/bad.jpg');
     } else if (4 <= count && count <= 6) {
-      msg = '222';
+      msg = 'Так себе...';
       img = Image.asset('assets/images/medium.jpg');
     } else {
-      msg = '333';
+      msg = 'Это превосходно!';
       img = Image.asset('assets/images/good.jpg');
     }
 
@@ -72,7 +77,8 @@ class Result extends StatelessWidget {
             const Divider(
               color: Colors.white,
             ),
-            Text('OK $count is $total',
+            Text('$count / $total',
+            style: resTextStyle,
             ),
             const Divider(
               color: Colors.white,
